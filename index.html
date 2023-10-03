@@ -65,6 +65,82 @@
       </div>
     </header>
 
+    <!-- Menu -->
+    <div class="menu">
+      <div class="menu-inner">
+        <button class="close-button" type="button">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+        <nav class="menu-nav">
+          <a class="logo" href="./index.html"
+            >Web<span class="accent">Studio</span>
+          </a>
+
+          <ul class="menu-list">
+            <li>
+              <a class="menu-item menu-first-item" href="./index.html">studio</a>
+            </li>
+            <li>
+              <a class="menu-item" href="">portfolio</a>
+            </li>
+            <li>
+              <a class="menu-item" href="">contacts</a>
+            </li>
+          </ul>
+
+        <address class="contact-info">
+          <ul class="contacts-list">
+            <li>
+              <a class="contacts" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="contacts" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            
+          </ul>
+        </address>
+
+        <ul class="menu-links">
+                  <li class="menu-icon-item">
+                    <a class="menu-icon-link" href="#">
+                      <svg class="menu-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu-icon-item">
+                    <a class="menu-icon-link" href="#">
+                      <svg class="menu-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu-icon-item">
+                    <a class="menu-icon-link" href="#">
+                      <svg class="menu-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu-icon-item">
+                    <a class="menu-icon-link" href="#">
+                      <svg class="menu-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+      </div>
+    </div>
+
     <main>
       <!-- Hero section  -->
       <section class="hero-sec">
@@ -76,7 +152,7 @@
 
       <!-- About section -->
       <section class="about-sec">
-        <div class="container">
+        <div class="container about-inner">
           <h2 class="visually-hidden">About us</h2>
           <ul class="about-list">
             <li class="about-item">
@@ -137,7 +213,7 @@
           <h2 class="team-title">our team</h2>
           <ul class="team-list">
             <li class="member-card">
-              <img src="./images/img-01.jpg" alt="Mark Guerrero" width="264" />
+              <img srcset="./images/img-01.jpg 1x, ./images/img-01@2x.jpg 2x" src="./images/img-01.jpg" alt="Mark Guerrero" width="264" />
               <div class="team-member-info">
                 <h3 class="team-member">Mark Guerrero</h3>
                 <p class="member-position">Product Designer</p>
@@ -175,7 +251,7 @@
               </div>
             </li>
             <li class="member-card">
-              <img src="./images/img-02.jpg" alt="Tom Ford" width="264" />
+              <img srcset="./images/img-02.jpg 1x, ./images/img-02@2x.jpg 2x" src="./images/img-02.jpg" alt="Tom Ford" width="264" />
               <div class="team-member-info">
                 <h3 class="team-member">Tom Ford</h3>
                 <p class="member-position">Frontend Developer</p>
@@ -212,7 +288,7 @@
               </div>
             </li>
             <li class="member-card">
-              <img src="./images/img-03.jpg" alt="Camila Garcia" width="264" />
+              <img srcset="./images/img-03.jpg 1x, ./images/img-03@2x.jpg 2x" src="./images/img-03.jpg" alt="Camila Garcia" width="264" />
               <div class="team-member-info">
                 <h3 class="team-member">Camila Garcia</h3>
                 <p class="member-position">Marketing</p>
@@ -249,7 +325,7 @@
               </div>
             </li>
             <li class="member-card">
-              <img src="./images/img-04.jpg" alt="Daniel Wilson" width="264" />
+              <img srcset="./images/img-04.jpg 1x, ./images/img-04@2x.jpg 2x" src="./images/img-04.jpg" alt="Daniel Wilson" width="264" />
               <div class="team-member-info">
                 <h3 class="team-member">Daniel Wilson</h3>
                 <p class="member-position">UI Designer</p>
@@ -296,9 +372,8 @@
           <ul class="portfolio-list">
             
             <li class="portfolio-item">
-
               <div class="portfolio-image">
-                <img src="./images/img.jpg" alt="Banking App" width="360" />
+                <img srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" src="./images/img.jpg" alt="Banking App" width="360" />
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
@@ -314,6 +389,7 @@
               <div class="portfolio-image">
                 <img
                   class="portfolio-photo"
+                  srcset="./images/img-a.jpg 1x, ./images/img-a@2x.jpg 2x"
                   src="./images/img-a.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -333,6 +409,7 @@
             <li class="portfolio-item">
               <div class="portfolio-image">
                 <img
+                srcset="./images/img-b.jpg 1x, ./images/img-b@2x.jpg 2x"
                   src="./images/img-b.jpg"
                   alt="Meditation App"
                   width="360"
@@ -351,7 +428,7 @@
 
             <li class="portfolio-item">
               <div class="portfolio-image">
-                <img src="./images/img-c.jpg" alt="Taxi Service" width="360" />
+                <img srcset="./images/img-c.jpg 1x, ./images/img-c@2x.jpg 2x" src="./images/img-c.jpg" alt="Taxi Service" width="360" />
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -367,6 +444,7 @@
             <li class="portfolio-item">
               <div class="portfolio-image">
                 <img
+                srcset="./images/img-d.jpg 1x, ./images/img-d@2x.jpg 2x"
                   src="./images/img-d.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -386,6 +464,7 @@
             <li class="portfolio-item">
               <div class="portfolio-image">
                 <img
+                srcset="./images/img-e.jpg 1x, ./images/img-e@2x.jpg 2x"
                   src="./images/img-e.jpg"
                   alt="Online Courses"
                   width="360"
@@ -482,7 +561,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
 
           <button class="close-button" type="button">
@@ -533,25 +612,16 @@
 
             <input class="modal-checkbox-input visually-hidden" type="checkbox" value="true" name="user-privacy" id="user-privacy" />
             
-            <span class="checkbox-check">
+          <span class="checkbox-check">
                 <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
-              </span>
-            <label class="modal-checkbox-label" for="user-privacy">
+          </span>
+
+          <label class="modal-checkbox-label" for="user-privacy">
               I accept the terms and conditions of the 
               <a class="modal-checkbox-link" href="#">Privacy Policy</a>
             </label>
-            
-            <!-- <label class="modal-checkbox-label" for="user-privacy">
-              <span class="checkbox-check">
-                <svg class="checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-vector"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the 
-              <a class="modal-checkbox-link" href="#">Privacy Policy</a>
-            </label> -->
 
           </div>
 
@@ -560,5 +630,6 @@
         </form>
       </div>
     </div>
+
   </body>
 </html>

@@ -47,6 +47,12 @@ img {
     height: auto;
 }
 
+@media screen and (min-width: 320px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -178,25 +184,6 @@ img {
     display: none;
 }
 
-@media screen and (min-width: 768px) {
-    .contact-info {
-            display: block;
-        }
-        .contacts-list {
-            margin-top: 16px;
-            font-style: normal;
-            display: flex;
-            flex-direction: column;
-        }
-}
-
-@media screen and (min-width: 1158px) {
-    .contacts-list {
-        flex-direction: row;
-        gap: 40px;
-    }
-}
-
 .contacts {
     color: #434455;
     font-size: 12px;
@@ -222,6 +209,146 @@ img {
     color: #404BBF;
 }
 
+
+
+
+/* Menu */
+
+.menu {
+    padding: 72px 24px 24px;
+    position: fixed;
+    background-color: #fff;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu .is-open {
+    transform: translateX(0);
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
+
+.menu-item {
+    color: #2E2F42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.menu-item:active {
+    color: #404BBF;
+}
+
+.menu-first-item {
+    color: #404BBF;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+
+    .menu .contact-info {
+            display: block;
+            margin-bottom: 48px;
+        }
+        .contacts-list {
+            margin-top: 16px;
+            font-style: normal;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .menu .logo {
+            display: none;
+        }
+
+        .menu .contacts {
+            color: #434455;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        }
+
+        .contacts:hover,
+        .contacts:focus,
+        .contacts:active {
+            color: #404BBF;
+        }
+}
+
+@media screen and (min-width: 768px) {
+
+    .contact-info {
+            display: block;
+        }
+
+        .contacts-list {
+            margin-top: 16px;
+            font-style: normal;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contacts {
+            color: #434455;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
+        }
+}
+
+@media screen and (min-width: 1158px) {
+    .contacts-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+.menu-links {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.menu-icon-item {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-icon-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-icon-link:hover,
+.menu-icon-link:focus {
+    background-color: #31D0AA;
+}
+
+.menu-icon {
+    fill: #fff;
+}
+
 /*hero section*/
 
 .hero-sec {
@@ -232,22 +359,56 @@ img {
     max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), 
-    url("../images/hero-bg-image.jpg");
+    url("../images/hero-bg_mob.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+@media screen and (min-resolution: 192dpi) {
+  .hero-sec {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), 
+    url("../images/hero-bg_mob@2x.jpg");
+  }  
+}
+
 @media screen and (min-width: 768px) {
     .hero-sec {
         padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), 
+    url("../images/hero-bg_tablet.jpg");
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-sec {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), 
+    url("../images/hero-bg_tablet@2x.jpg");
     }
 }
 
 @media screen and (min-width: 1158px) {
     .hero-sec {
         padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), 
+    url("../images/hero-bg-image.jpg");
     }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero-sec {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), 
+    url("../images/hero-bg-image@2x.jpg");
+    }
+}
+
+.hero-sec .container {
+    margin: 0 auto;
 }
 
 .hero-inner {
@@ -317,6 +478,12 @@ img {
 
 .about-sec {
     padding: 96px 0;
+}
+
+.about-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (min-width: 1158px) {
@@ -949,8 +1116,6 @@ img {
     transform: translate(-50%, -50%) scale(1);
     width: 288px;
     min-height: 623px;
-    /* width: 408px;
-    min-height: 584px; */
     overflow-y: auto;
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -958,10 +1123,17 @@ img {
     border-radius: 4px;
     background: #FCFCFC;
     padding: 72px 16px 24px 16px;
-    /* padding: 72px 24px 24px 24px; */
     display: flex;
     flex-direction: column;
     
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px;
+    }
 }
 
 .close-button {
@@ -1096,22 +1268,24 @@ margin-bottom: 4px;
     display: flex;
     gap: 8px;
     margin-bottom: 24px;
+    align-items: center;
 }
 
 .checkbox-check {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent; 
-    margin-right: 8px;
+    
 }
 
-.modal-checkbox-input:checked + .modal-checkbox-label .checkbox-check {
+.modal-checkbox-input:checked + .checkbox-check {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
