@@ -72,12 +72,8 @@ img {
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
+        max-width: 1160px;
     }
-}
-
-.header .container {
-    max-width: 100%;
 }
 
 .header-inner {
@@ -333,6 +329,10 @@ img {
             line-height: 1.17;
             letter-spacing: 0.04em;
         }
+
+        .first-contacts {
+            color: #404BBF;
+        }
 }
 
 @media screen and (min-width: 1158px) {
@@ -417,7 +417,6 @@ img {
 
 @media screen and (min-width: 1158px) {
     .hero-sec {
-        padding: 112px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), 
     url("../images/hero-bg-image.jpg");
@@ -833,7 +832,7 @@ img {
 }
 
 .portfolio-item:hover {
-    border: 1px solid #F4F4FD;
+    border: none;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -917,7 +916,7 @@ img {
     .footer .container {
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 108px;
+        max-width: 584px;
         align-items: baseline;
         column-gap: 24px;
         row-gap: 72px;
@@ -926,11 +925,11 @@ img {
 
 @media screen and (min-width: 1158px) {
     .footer .container {
+        max-width: 1160px;
         flex-direction: row;
         align-items: baseline;
         flex-wrap: nowrap;
         gap: 0;
-        padding: 0 16px;
     }
 
     .footer-inner {
@@ -938,7 +937,6 @@ img {
         flex-direction: row;
         justify-content: center;
         align-items: baseline;
-        max-width: 1158px;    
     }
 
     .footer-info-container {
