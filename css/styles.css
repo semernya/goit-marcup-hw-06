@@ -316,6 +316,7 @@ img {
     align-items: center;
     }
         .contacts-list {
+            gap: 12px;
             font-style: normal;
             display: flex;
             flex-direction: column;
@@ -542,7 +543,8 @@ img {
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 }
 
@@ -670,7 +672,8 @@ img {
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
         max-width: 768px;
     }
 }
